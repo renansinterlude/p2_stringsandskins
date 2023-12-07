@@ -1,0 +1,62 @@
+body {
+  background-color: #222831;
+  margin: 0%;
+}
+
+h2 {
+  color: whitesmoke;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+
+.heading { 
+  grid-area: heading; 
+  background-color: #FBD46D;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+.menu { 
+  grid-area: menu; 
+  background-color: #293645;
+  height: 60px;
+  /*  mediaquery::: margin-top: 50px; */
+  margin-bottom: 10px;
+}
+
+.botao-detalhes {
+  background-color: #222831;
+  color: whitesmoke;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.produto {
+  display: inline-block;
+  background-color: #77bfcf74;
+}
+
+.footer { 
+  background-color: #FBD46D;
+  margin-top: 10px;
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 0) {
+  .menu { 
+      grid-area: menu; 
+      background-color: #293645;
+      height: 60px;
+      /*  mediaquery::: margin-top: 50px; */
+      margin-top: 2.5rem;
+  }
+
+}
+
+
+

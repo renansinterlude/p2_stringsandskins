@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="reenviar-senha-container">
+        <h2>Informe seu e-mail:</h2>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail" [(ngModel)]="email">
+        </div>
+        <button class="btn btn-primary botao-reenviar-senha btn-block" (click)="enviarEmail()">OK</button>
+        <div class="mensagem" [ngClass]="{'alert alert-success': mensagem === 'Um e-mail com instruções de recuperação foi enviado.', 'alert alert-danger': mensagem === 'E-mail inválido.'}"> 
+          {{ mensagem }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

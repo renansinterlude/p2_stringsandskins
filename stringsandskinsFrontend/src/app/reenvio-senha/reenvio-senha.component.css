@@ -1,0 +1,51 @@
+.container {
+  margin-top: 50px;
+}
+  
+.reenviar-senha-container {
+  background-color: #293645;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 250px;
+}
+  
+h2 {
+  color: whitesmoke;
+}
+  
+label {
+  color: whitesmoke;
+}
+  
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+  
+  .botao-reenviar-senha {
+    background-color: #276a72;
+    color: whitesmoke;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao-reenviar-senha:hover {
+    background-color: #1d4e54;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .reset-password-box {
+      padding: 20px 30px;
+    }
+  
+    .btn-primary {
+      font-size: 16px;
+    }
+  }
+  

@@ -1,0 +1,166 @@
+/* body {
+    background-color: #222831;
+}
+
+.cor-fundo-login {
+    background-color: #2B3747;
+
+} 
+
+.container-cartoes-login {
+    width: 70%;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+}
+
+.cartoes-login {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #354458;
+    color: white;
+} */
+
+h2 {
+    padding-left: 10px;
+}
+
+a {
+    padding-left: 12px;
+}
+
+
+body {
+    background-color: #222831;
+}
+
+.login-container {
+    display: flex;
+    width: 70%;
+    background-color: #2B3747;
+    border-radius: 5px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+.login-success-message, .cadastro-success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+  }
+  
+.login-success-message.show, .cadastro-success-message.show {
+    display: block;
+  }
+
+.login-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group2 {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.cadastro-extendido {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.login-button, .signup-button .btn {
+    background-color: #FBD46D;
+    color: #000;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 12px;
+}
+
+.login-button:hover, .signup-button .btn:hover {
+    background-color: #222831;
+    color:whitesmoke;   
+}
+
+.signup-button {
+    flex: 1;
+    background-color: #354458;
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-button .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup-button a:hover {
+    color: #222831;
+    color: whitesmoke;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: whitesmoke;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .login-form {
+        padding: 10px 30px;
+    }
+   
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .cadastro-extendido {
+        width: 100%;
+    }
+
+    .login-button, .signup-button .btn {
+        background-color: #FBD46D;
+        color: #000;
+        border-radius: 5px;
+        font-size: 18px;
+        margin-left: 12px;
+    }
+}

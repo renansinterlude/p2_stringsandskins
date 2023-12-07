@@ -1,0 +1,39 @@
+<div class="container mt-5" style="color:whitesmoke">
+    <h2>Carrinho</h2>
+    <div class="table-responsive">  
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="carrinho">Produto</th>
+                    <th class="carrinho">Quantidade</th>
+                    <th class="carrinho">Preço Total</th>
+                    <th class="carrinho"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of carrinhoService.getItensCarrinhoObservable() | async">
+                    <td class="carrinho">{{ item.produto.nome }}</td>
+                    <td class="carrinho">{{ item.quantidade }}</td>
+                    <td class="carrinho">R$ {{ item.produto.preco * item.quantidade | number:'1.2-2' }}</td>
+                    <td class="carrinho">
+                        <button class="btn botao-remover"  (click)="carrinhoService.removerItem(item.produto) ">Remover</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="total">
+        <p>Total: R$ {{ carrinhoService.calcularTotal() | number:'1.2-2' }}</p>
+    </div>
+    <button class="btn botao-limpar-carrinho" (click)="limparCarrinho()">Esvaziar carrinho</button>
+    
+    <div class="mt-3"></div>
+    
+    <button class="btn botao-finalizar-compra mt-3" (click)="compraFinalizada()">Finalizar compra</button>
+    
+    <div class="mt-3"></div>
+    
+    <div class="alert alert-success" role="alert" *ngIf="compraFinalizadaMsgVisible">
+        Compra finalizada com sucesso!
+    </div>
+</div>

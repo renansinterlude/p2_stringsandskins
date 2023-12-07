@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "enderecos",
+    "dateExported": "2023-12-07T18:02:58.584Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "af68dc90-4847-465e-bac2-c3674dab8031",
+            "colId": "0e130f7f-0598-4ca6-9484-24637e70b218",
+            "containerId": "",
+            "name": "post adicionar endereco",
+            "url": "http://localhost:3000/enderecos",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-05T23:01:08.042Z",
+            "modified": "2023-12-07T18:00:04.279Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"usuario_id\": \"4\", \n  \"rua\": \"Rua das Flores\", \n  \"numero\": \"123\", \n  \"complemento\": \"Apartamento\", \n  \"cidade\": \"São Paulo\", \n  \"estado\": \"SP\", \n  \"cep\": \"1234567890\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e164e834-5a3a-46f0-be06-8192c7629ba5",
+            "colId": "0e130f7f-0598-4ca6-9484-24637e70b218",
+            "containerId": "",
+            "name": "get listar enderecos",
+            "url": "http://localhost:3000/enderecos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-12-05T23:01:23.808Z",
+            "modified": "2023-12-05T23:01:23.808Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "21d69704-eb70-457b-be15-7193bd06dd75",
+            "colId": "0e130f7f-0598-4ca6-9484-24637e70b218",
+            "containerId": "",
+            "name": "put atualizar endereco por id",
+            "url": "http://localhost:3000/enderecos/1",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-12-05T23:24:09.511Z",
+            "modified": "2023-12-05T23:24:09.511Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"usuario_id\": \"1\", \n  \"rua\": \"Rua das Flores\", \n  \"numero\": \"123\", \n  \"complemento\": \"\", \n  \"cidade\": \"São Paulo\", \n  \"estado\": \"SP\", \n  \"cep\": \"1234567890\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "40465bab-e913-4347-bbf8-9dcf30fffe06",
+            "colId": "0e130f7f-0598-4ca6-9484-24637e70b218",
+            "containerId": "",
+            "name": "delete excluir endereco por id",
+            "url": "http://localhost:3000/enderecos/2",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-12-05T23:25:13.734Z",
+            "modified": "2023-12-05T23:25:13.734Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

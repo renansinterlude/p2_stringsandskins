@@ -1,0 +1,24 @@
+<body>
+    <div style="text-align: center; color: whitesmoke; padding-top: 10px; padding-bottom: 10px;">
+    <h1>Todos os produtos</h1>
+</div>
+
+<div class="container">
+    <div class="row flex-container d-flex justify-content-center">
+        <div class="col-md-6 produto-card" style="width: 35%;" *ngFor="let produto of produtos">
+            <div class="card mb-4" style="padding: 0;">
+                <div class="card-body" style="padding: 0;">
+                    <img [src]="produto.imagemUrl" alt="{{ produto.nome }}" class="card-img-top img-fluid produto-imagem">
+                    <h2 class="card-title mt-3" style="text-align: center;">{{ produto.nome }}</h2>
+                    <p class="card-text font-weight-bold font-size-large" style="text-align: center;">R${{ produto.preco.toFixed(2) }}</p>
+                    <div class="flex-container d-flex justify-content-center" style="margin-bottom: 15px;"><a (click)="verDetalhes(produto.id)" class="btn botao-detalhes">Comprar</a> <!-- Ignorar erro --></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+

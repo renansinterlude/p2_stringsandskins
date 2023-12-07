@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "categorias",
+    "dateExported": "2023-12-07T18:02:55.040Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2a1052ec-1aec-42e4-90ee-6e47d7832f5c",
+            "colId": "b32a9061-700d-4ecf-bf3c-ae39b74e67d7",
+            "containerId": "",
+            "name": "post adicionar categorias",
+            "url": "http://localhost:3000/categorias",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-05T23:00:09.512Z",
+            "modified": "2023-12-07T17:55:41.747Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Rock\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b339bb4c-137c-41c7-954c-7f5f21056d71",
+            "colId": "b32a9061-700d-4ecf-bf3c-ae39b74e67d7",
+            "containerId": "",
+            "name": "get listar categorias",
+            "url": "http://localhost:3000/categorias",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-12-05T23:00:15.752Z",
+            "modified": "2023-12-05T23:00:15.752Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b6929b6c-3b3c-4e19-9b33-a19b45de14bf",
+            "colId": "b32a9061-700d-4ecf-bf3c-ae39b74e67d7",
+            "containerId": "",
+            "name": "put atualizar categoria por id",
+            "url": "http://localhost:3000/categorias/6",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-12-05T23:28:41.077Z",
+            "modified": "2023-12-05T23:59:19.951Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Rock\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d7eeab79-e61a-4eb2-a8c4-0f31299f91a2",
+            "colId": "b32a9061-700d-4ecf-bf3c-ae39b74e67d7",
+            "containerId": "",
+            "name": "delete excluir categoria",
+            "url": "http://localhost:3000/categorias/id",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-12-05T23:38:24.757Z",
+            "modified": "2023-12-05T23:44:11.663Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

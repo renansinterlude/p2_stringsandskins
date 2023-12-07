@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "produtos",
+    "dateExported": "2023-12-07T18:02:46.832Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0816bace-0086-4a82-823e-4c5b7bdca6e9",
+            "colId": "63d0036d-3341-42de-9c27-733931109675",
+            "containerId": "",
+            "name": "post adicionar produtos",
+            "url": "http://localhost:3000/produtos",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-05T22:59:48.048Z",
+            "modified": "2023-12-05T23:58:32.624Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Vinil Ultraviolence Urban Outfitters\",\n  \"descricao\": \"CD Lana Del Rey\",\n  \"preco\": \"799.99\",\n  \"quantidade\": \"2\",\n  \"categoria_id\": \"2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "37dedde8-ecfb-45f4-9aec-7f22349a430d",
+            "colId": "63d0036d-3341-42de-9c27-733931109675",
+            "containerId": "",
+            "name": "get listar produtos",
+            "url": "http://localhost:3000/produtos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-12-05T22:59:53.704Z",
+            "modified": "2023-12-05T22:59:53.704Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "25b62b21-afd6-47aa-bf10-898460abde0e",
+            "colId": "63d0036d-3341-42de-9c27-733931109675",
+            "containerId": "",
+            "name": "put atualizar produto por id",
+            "url": "http://localhost:3000/produtos/2",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-12-05T23:42:05.501Z",
+            "modified": "2023-12-07T17:56:42.562Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"CD That's Your Lot\",\n  \"descricao\": \"CD Blaenavon\",\n  \"preco\": \"50.99\",\n  \"quantidade\": \"60\",\n  \"categoria_id\": \"1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "01597a9a-a2a6-492b-89bb-83dd0a6c3c45",
+            "colId": "63d0036d-3341-42de-9c27-733931109675",
+            "containerId": "",
+            "name": "delete excluir produto por id",
+            "url": "http://localhost:3000/produtos/2",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-12-05T23:43:42.866Z",
+            "modified": "2023-12-05T23:43:42.866Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
